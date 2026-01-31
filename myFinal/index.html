@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ონლაინ მაღაზია</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="light">
+
+<header>
+  <div class="logo">ონლაინ მაღაზია</div>
+  <button id="themeToggle">🌙 Dark / Light</button>
+  <button id="burgerBtn">☰</button>
+</header>
+
+<nav id="sidebar">
+  <button id="closeSidebar">✖</button>
+  <a href="#">მთავარი</a>
+  <a href="#products">პროდუქტები</a>
+</nav>
+
+<div class="main-container"> <!-- wrapper for right shift -->
+  <section class="slider-section">
+    <div class="slider">
+      <div class="slides">
+        <img src="https://i.pinimg.com/1200x/14/a3/32/14a332c3908ce1cbe1a08b1fcd7c6eed.jpg" />
+        <img src="https://i.pinimg.com/1200x/97/b4/6a/97b46af67b0b9bff732ef258782c0669.jpg" />
+        <img src="https://i.pinimg.com/1200x/3b/f3/61/3bf3616a91f70c0e21d48f966c547a09.jpg" />
+      </div>
+    </div>
+    <button id="prev">‹</button>
+    <button id="next">›</button>
+    <div id="pagination"></div>
+  </section>
+
+  <section id="features"></section>
+
+  <section id="products">
+    <h2>პროდუქტები</h2>
+    <div id="productsContainer"></div>
+  </section>
+
+  <div id="modal">
+    <div class="modal-content">
+      <button id="closeModal">✖</button>
+      <img id="modalImg">
+      <h3 id="modalTitle"></h3>
+      <p id="modalDesc"></p>
+    </div>
+  </div>
+
+  <section id="contact" class="contact-section">
+    <h2 class="contact-title">კონტაქტი</h2>
+
+    <form id="contactForm" class="contact-card">
+      <div class="input-group">
+        <input type="text" name="name" placeholder="სახელი">
+        <input type="email" name="email" placeholder="ელ. ფოსტა">
+      </div>
+
+      <input type="text" name="phone" placeholder="ტელეფონი">
+      <textarea name="message" placeholder="შეტყობინება"></textarea>
+      <p id="formMsg"></p>
+
+      <button type="submit">გაგზავნა</button>
+    </form>
+  </section>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
