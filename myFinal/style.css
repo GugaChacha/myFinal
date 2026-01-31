@@ -10,7 +10,7 @@ body.light { background: #fff; color: #000; }
 body.dark { background: #111; color: #fff; }
 
 .main-container {
-  margin-left: 30px; /* shifts content a bit to the right */
+  margin-left: 30px;
 }
 
 /* Header */
@@ -283,4 +283,5 @@ body.dark .contact-card {
 body.dark #themeToggle {
   border-color: #555;
   color: white;
+
 }
